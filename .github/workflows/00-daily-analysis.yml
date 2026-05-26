@@ -3,7 +3,7 @@
 on:
   # 瀹氭椂瑙﹀彂 - 姣忓ぉ鍖椾含鏃堕棿 18:00 (UTC 10:00)
   schedule:
-    - cron: '35 7 * * 1-5'     # 鍛ㄤ竴鍒板懆浜旓紝UTC 10:00 = 鍖椾含鏃堕棿 18:00
+    - cron: '35 7 * * 1-5'     # 鍛ㄤ竴鍒板懆浜旓紝UTC 07:35 = 鍖椾含鏃堕棿 15:35
   
   # 鎵嬪姩瑙﹀彂
   workflow_dispatch:
@@ -493,4 +493,5 @@ jobs:
             echo "馃摐 鏈€杩戞棩蹇楋紙鏈€鍚?30 琛岋級:"
             tail -30 logs/stock_analysis_*.log 2>/dev/null || echo "鏃犳棩蹇?
           fi
+
 
